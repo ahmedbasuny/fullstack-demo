@@ -1,0 +1,30 @@
+<div class="container">
+    <table class="table table-bordered table-hover">
+        <thead>
+          <tr>
+            <th class="thead-bg" scope="col">Workstation</th>
+            <th class="thead-bg" scope="col">Employee</th>
+            <th class="thead-bg" scope="col">Origin</th>
+            <th class="thead-bg" scope="col">Destination</th>
+            <th class="thead-bg" scope="col">Start</th>
+            <th class="thead-bg" scope="col">End</th>
+            <th class="thead-bg" scope="col">Working days</th>
+            <th class="thead-bg" scope="col">Risk</th>
+
+
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let w of workationList">
+            <th scope="row">{{w.workationId}}</th>
+            <td>{{w.employeeName}}</td>
+            <td>{{w.originName}}</td>
+            <td>{{w.destinationName}}</td>
+            <td>{{w.start}}</td>
+            <td>{{w.end}}</td>
+            <td>{{w.workingDays}}</td>
+            <td>{{w.risk}}</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
